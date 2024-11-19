@@ -10,7 +10,6 @@ import KeyTopics from "./KeyTopics";
 
 
 const Home = () => {
-
   return (
     <div className="bg-[#000814] flex flex-col min-h-screen w-screen">
       {/* Main Overview */}
@@ -31,7 +30,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
         {/* Header positioned absolutely */}
-        <div className="relative z-10">
+        <div className="relative z-20">
           <Header />
         </div>
 

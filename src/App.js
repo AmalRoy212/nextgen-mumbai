@@ -1,12 +1,13 @@
 import React from "react";
-
-
 import Body from "./components/Body";
+import { LanguageProvider } from "./context/LanguageContext";
 
 
 function App() {
   return (
-        <Body />
+    <LanguageProvider>
+      <Body />
+    </LanguageProvider>
   );
 }
 
