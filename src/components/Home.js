@@ -23,7 +23,7 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source
-            src="https://cdn.pixabay.com/video/2023/07/19/172170-846731303_large.mp4"
+            src="https://cdn.pixabay.com/video/2020/02/20/32643-392967100_large.mp4"
             type="video/mp4"
           />
         </video>
@@ -38,7 +38,7 @@ const Home = () => {
         <div className="max-w-[950px] mt-[-3rem] xl:py-0 py-11 xl:max-w-[850px] xl:px-0 px-7 flex flex-col gap-5 mx-auto items-center justify-between text-center relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-5xl text-center xl:mt-16 md:mt-24 sm:mt-14 font-bold text-white">
              
-            <HighlightText text={"NextGen Automation & Data Conference 2024"} />
+            <HighlightText text={"NextGen Automation & Data Conference 2025"} />
           </h1>
 
           <div className="w-1/2 h-1 mt-2 bg-white mx-auto"></div>
@@ -59,11 +59,11 @@ const Home = () => {
           <div className="flex items-center justify-center gap-6 text-lg sm:text-xl md:text-2xl mt-2 text-center text-white text-transparent bg-clip-text font-bold">
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-regular fa-calendar"></i>
-              24 October
+              30 January 2025
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              DoubleTree by Hilton , Dubai Al Jadaf , UAE
+              Abudhabi, UAE
             </div>
             {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>
