@@ -56,9 +56,9 @@ const Header = () => {
           </div>
 
           {/* Language Toggle Button */}
-          <button onClick={toggleLanguage} className="ml-4 py-2 px-4 bg-green-500 text-white rounded hover:bg-green-700 transition-all duration-200">
+          {/* <button onClick={toggleLanguage} className="ml-4 py-2 px-4 bg-green-500 text-white rounded hover:bg-green-700 transition-all duration-200">
             {language === 'en' ? 'ARABIC' : 'ENGLISH'}
-          </button>
+          </button> */}
         </div>
       </nav>
     </header>
