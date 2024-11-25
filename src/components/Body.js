@@ -29,7 +29,7 @@ const appRouter = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/nextgen-event/register-form" ,
+    path: "/register-form" ,
     element: <Body />,
   },
   {

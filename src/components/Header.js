@@ -1,19 +1,20 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import UIClogo from '../assets/images/UICLOGOIMAGE.png';
 import { useLanguage } from '../context/LanguageContext';
 
 const Header = () => {
   const navItems = ["HOME", "ABOUT", "PARTNERS"];
   const navigate = useNavigate();
+  const location = useLocation();
 
   // State for language toggling
   const { language, setLanguage } = useLanguage();
 
   const handleRegisterClick = () => {
-    navigate('/nextgen-event/register-form');
+    navigate('/register-form');
   };
 
   // Function to toggle language
@@ -24,9 +25,8 @@ const Header = () => {
   return (
     <header>
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between xl:px-0 px-7 relative z-10">
-
         {/* Logo */}
-        <Link to="https://utrechtitconsulting.com" className="cursor-pointer py-7 pr-7">
+        <Link to="" className="cursor-pointer py-7 pr-7">
           <img src={UIClogo} className="w-[100px] md:w-[130px]" alt="UIC Logo" />
         </Link>
 
@@ -38,7 +38,7 @@ const Header = () => {
                 key={index}
                 className="font-semibold py-7 hover:text-[#928f96] cursor-pointer transition-all duration-200 relative group"
               >
-                <a className="text-sm font-mullish font-thin" href={`#${item.toLowerCase()}`}>{language === 'en' ? item : (item === 'HOME' ? 'الرئيسية' : item === 'ABOUT' ? 'عنا' : 'شركاء')}</a>
+                <a className="text-sm font-mullish font-thin" href={location.pathname !== "/register-form" ? `#${item.toLowerCase()}` : '/'}>{language === 'en' ? item : (item === 'HOME' ? 'الرئيسية' : item === 'ABOUT' ? 'عنا' : 'شركاء')}</a>
                 <div className="absolute bottom-5 w-full h-1 bg-[#928f96] hidden group-hover:block transition-all duration-200"></div>
               </li>
             ))}
