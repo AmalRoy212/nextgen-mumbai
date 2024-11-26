@@ -11,7 +11,7 @@ const registrationDetails = [
     {
         icon: "BiWorld",
         heading: "Visit Us",
-        details: "Dubai, UAE",
+        details: "Abu Dhabi, UAE",
     },
 ];
 
