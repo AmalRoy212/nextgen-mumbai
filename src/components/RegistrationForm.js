@@ -82,7 +82,7 @@ const RegistrationForm = () => {
             {...register('first_name', { required: true })}
           />
           {errors.first_name && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your first name.</span>
+            <span className="-mt-1 text-[12px] text-red-400">Please enter your first name.</span>
           )}
         </div>
 
@@ -98,7 +98,7 @@ const RegistrationForm = () => {
             {...register('last_name', { required: true })}
           />
           {errors.last_name && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your last name.</span>
+            <span className="-mt-1 text-[12px] text-red-400">Please enter your last name.</span>
           )}
         </div>
       </div>
@@ -116,7 +116,7 @@ const RegistrationForm = () => {
             {...register('company', { required: true })}
           />
           {errors.company && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your company name.</span>
+            <span className="-mt-1 text-[12px] text-red-400">Please enter your company name.</span>
           )}
         </div>
 
@@ -132,7 +132,7 @@ const RegistrationForm = () => {
             {...register('designation', { required: true })}
           />
           {errors.designation && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please enter your designation.</span>
+            <span className="-mt-1 text-[12px] text-red-400">Please enter your designation.</span>
           )}
         </div>
       </div>
@@ -156,7 +156,7 @@ const RegistrationForm = () => {
             })}
           />
           {errors.contactNumber && (
-            <span className="-mt-1 text-[12px] text-yellow-400">
+            <span className="-mt-1 text-[12px] text-red-400">
               {errors.contactNumber.message || "Please enter your contact number."}
             </span>
           )}
@@ -180,7 +180,7 @@ const RegistrationForm = () => {
             className="border border-slate-300 p-3 rounded-xl text-slate-800"
           />
           {errors.telephone && (
-            <span className="-mt-1 text-[12px] text-yellow-400">
+            <span className="-mt-1 text-[12px] text-red-400">
               {errors.telephone.message || "Please enter your telephone number."}
             </span>
           )}
@@ -203,7 +203,7 @@ const RegistrationForm = () => {
             })}
           />
           {errors.email && (
-            <span className="-mt-1 text-[12px] text-yellow-400">{errors.email.message || "Please enter your email address."}</span>
+            <span className="-mt-1 text-[12px] text-red-400">{errors.email.message || "Please enter your email address."}</span>
           )}
         </div>
 
@@ -222,7 +222,7 @@ const RegistrationForm = () => {
             <option value="Attend as a Partner">Attend as a Partner</option>
           </select>
           {errors.event && (
-            <span className="-mt-1 text-[12px] text-yellow-400">Please select an event.</span>
+            <span className="-mt-1 text-[12px] text-red-400">Please select an event.</span>
           )}
         </div>
       </div>
@@ -250,7 +250,7 @@ const RegistrationForm = () => {
           <option value="IT Consulting">IT Consulting</option>
         </select>
         {errors.technologies && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please select a technology.</span>
+          <span className="-mt-1 text-[12px] text-red-400">Please select a technology.</span>
         )}
       </div>
 
@@ -278,7 +278,7 @@ const RegistrationForm = () => {
           <option value="$1,000,000 and above">$1,000,000 and above</option>
         </select>
         {errors.budget && (
-          <span className="-mt-1 text-[12px] text-yellow-400">Please select a budget.</span>
+          <span className="-mt-1 text-[12px] text-red-400">Please select a budget.</span>
         )}
       </div>
 
@@ -303,13 +303,13 @@ const RegistrationForm = () => {
           By completing this form, I hereby officially confirm my participation in the event and consent to receiving updates from UIC on the latest technology services for potential collaboration via email/WhatsApp.
         </label>
         {errors.consent && (
-          <span className="-mt-1 text-[12px] text-yellow-400">You must consent to the terms and conditions.</span>
+          <span className="-mt-1 text-[12px] text-red-400">You must consent to the terms and conditions.</span>
         )}
       </div>
 
       <button
         type="submit"
-        className="rounded-md bg-yellow-400 px-6 py-3 text-center text-[13px] font-medium uppercase tracking-wide text-black transition hover:bg-yellow-300"
+        className="rounded-md bg-red-400 px-6 py-3 text-center text-[13px] font-medium uppercase tracking-wide text-black transition hover:bg-yellow-300"
       >
         Submit
       </button>
