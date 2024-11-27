@@ -309,7 +309,7 @@ const RegistrationForm = () => {
 
       <button
         type="submit"
-        className="rounded-md bg-red-400 px-6 py-3 text-center text-[13px] font-medium uppercase tracking-wide text-black transition hover:bg-yellow-300"
+        className="rounded-md bg-yellow-400 px-6 py-3 text-center text-[13px] font-medium uppercase tracking-wide text-black transition hover:bg-yellow-300"
       >
         Submit
       </button>
