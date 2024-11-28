@@ -38,12 +38,12 @@ const Technologies = () => {
         <img src={logo11} alt="exalate" className="h-20 w-auto md:-ml-10" />
         <img src={salesforce} alt="exalate" className="h-28 w-auto md:ml-14" />
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto " />
-        <div className="flex gap-2 justify-end items-end text-black">
+        {/* <div className="flex gap-2 justify-end items-end text-black">
           <img src={cleverflowLogo} alt="cleverflow" className="h-16 w-auto" />
           <p className="text-2xl sm:text-2xl md:text-5xl mb-2  font-bold font-sans  text-center text-black">
             CleverFlow
           </p>
-        </div>
+        </div> */}
         {/* <img src={odooLogo} alt="odoo" className="h-11 w-auto ml-48 mb-1" /> */}
       </div>
     </div>
