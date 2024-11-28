@@ -62,7 +62,7 @@ const Home = () => {
             </div>
             <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-hotel"></i>
-              Abudhabi, UAE
+              Mumbai, India
             </div>
             {/* <div className="flex gap-2 justify-center items-center">
               <i className="fa-solid fa-location-dot"></i>
