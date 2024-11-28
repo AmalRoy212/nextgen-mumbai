@@ -35,7 +35,7 @@ const Technologies = () => {
         <img src={solaceLogo} alt="Solace" className="h-32 w-auto md:mr-20 md:ml-10" />
         <img src={denodoLogo} alt="Denodo" className="h-16 w-auto mb-5" />
         {/* <img src={dbtLogo} alt="dbt" className="h-10 w-auto" /> */}
-        <img src={logo11} alt="exalate" className="h-20 w-auto md:-ml-10" />
+        {/* <img src={logo11} alt="exalate" className="h-20 w-auto md:-ml-10" /> */}
         <img src={salesforce} alt="exalate" className="h-28 w-auto md:ml-14" />
         <img src={kissflowLogo} alt="KissFlow" className="h-80 w-auto " />
         {/* <div className="flex gap-2 justify-end items-end text-black">
