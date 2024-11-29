@@ -243,7 +243,7 @@ const RegistrationForm = () => {
           <option value="Business Process Management">Business Process Management</option>
           <option value="Digital Process Automation">Digital Process Automation</option>
           <option value="Business Intelligence">Business Intellegence(BI)</option>
-          <option value="Data Engineering">Data Engineering</option>
+          {/* <option value="Data Engineering">Data Engineering</option> */}
           <option value="Data Management">Data Management</option>
           <option value="Data Virtulization">Data Virtulization</option>
           <option value="Real Time Analytics">Real Time Analytics</option>
