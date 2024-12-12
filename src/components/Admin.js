@@ -18,7 +18,7 @@ const Admin = () => {
 
     if (username === hardcodedUsername && password === hardcodedPassword) {
       localStorage.setItem("isAuthenticated", "true"); // Set authenticated flag
-      navigate("/nextgen-event/admin/dashboard");
+      navigate("/admin/dashboard");
     } else {
       setError("Invalid credentials");
     }
